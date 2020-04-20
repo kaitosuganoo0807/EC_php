@@ -40,7 +40,7 @@ if ($staff_name == '' || $staff_pass == '' || $staff_pass != $staff_pass2) {
 }
 else {
   $staff_pass = md5($staff_pass);
-  print'<form method="post" action="staff_add_done.php">';
+  print'<form method="POST" action="staff_add_done.php">';
   print'<input type="hidden" name="name" value="'.$staff_name.'">';
   print'<input type="hidden" name="pass" value="'.$staff_pass.'">';
   print'<br/>';
